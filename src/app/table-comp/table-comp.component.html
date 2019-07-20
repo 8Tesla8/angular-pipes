@@ -24,7 +24,11 @@
 
 <br>
 <div> Currency </div>
-
+<div>{{ data.money | currency:'EUR':'code'}}</div>
+<div>{{ data.money | currency:'EUR':'symbol-narrow'}}</div>
+<div>{{ data.money | currency:'EUR':'symbol':'1.1-1'}}</div>
+<div>{{ data.money | currency:'EUR':'symbol-narrow':'1.1-1'}}</div>
+<div>{{ data.money | currency:'EUR':'my own text: special price'}}</div>
 
 <br> <br>
 <div> String </div>

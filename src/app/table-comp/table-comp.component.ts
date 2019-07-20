@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TableCompComponent implements OnInit {
 
   public data = {
-    // currency: string;
+    money: 123.43,
     numb: 0.15,
     bigNumb: 23.456,
     str: 'Hello User', 
@@ -23,17 +23,10 @@ export class TableCompComponent implements OnInit {
 
 }
 
-// CurrencyPipe: Formats a currency
-// PercentPipe: Percents Format
-// UpperCasePipe: converts the string to uppercase
-// LowerCasePipe: converts a string to lowercase
-// DatePipe: format date
-// DecimalPipe: sets the number format
-// SlicePipe: truncates the string
-
 export class Info {
   public numb: number;
   public bigNumb: number;
+  public money: number;
 
   public str: string; 
   public date: Date;
