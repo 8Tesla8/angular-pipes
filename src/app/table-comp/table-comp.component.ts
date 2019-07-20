@@ -10,6 +10,7 @@ export class TableCompComponent implements OnInit {
   public data = {
     // currency: string;
     numb: 0.15,
+    bigNumb: 23.456,
     str: 'Hello User', 
     date: new Date(2015, 3, 25),
   } as Info;
@@ -31,8 +32,9 @@ export class TableCompComponent implements OnInit {
 // SlicePipe: truncates the string
 
 export class Info {
-  // public currency: number;
   public numb: number;
-  public str: string; //lower upper
+  public bigNumb: number;
+
+  public str: string; 
   public date: Date;
 }
