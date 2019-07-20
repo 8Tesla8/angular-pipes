@@ -3,34 +3,7 @@
 </p>
 
 
-<div> Date </div>
-<div> {{ data.date | date }} </div>
-<div> {{ data.date | date:"dd/MM/yyyy" }} </div>
-<div> {{ data.date | date:"MM/dd/yyyy" }} </div>
-
-
 <br>
-<div> Number </div>
-<div> {{ data.numb | percent }} </div>
-
-<!-- by default it show USD currency -->
-<div> {{ data.numb | currency }} </div>
-
-<br>
-<div> DecimalPipe</div>
-<div> {{ data.bigNumb | number:'3.1-2'}}</div>
-<div> {{ data.bigNumb | number:'4.4-5'}}</div>
-
-
-<br>
-<div> Currency </div>
-<div>{{ data.money | currency:'EUR':'code'}}</div>
-<div>{{ data.money | currency:'EUR':'symbol-narrow'}}</div>
-<div>{{ data.money | currency:'EUR':'symbol':'1.1-1'}}</div>
-<div>{{ data.money | currency:'EUR':'symbol-narrow':'1.1-1'}}</div>
-<div>{{ data.money | currency:'EUR':'my own text: special price'}}</div>
-
-<br> <br>
 <div> String </div>
 <div> {{ data.str | uppercase }} </div>
 <div> {{ data.str | lowercase }} </div>
@@ -41,7 +14,36 @@
 <div> {{ data.str | slice:3:8 }} </div> 
 
 
+<br> <br>
+<div> Date </div>
+<div> {{ data.date | date }} </div>
+<div> {{ data.date | date:"dd/MM/yyyy" }} </div>
+<div> {{ data.date | date:"MM/dd/yyyy" }} </div>
+
+
+<br> <br>
+<div> Number </div>
+<div> percent {{ data.numb | percent }} </div>
+
 <br>
+<div> DecimalPipe</div>
+<div> {{ data.bigNumb | number:'3.1-2'}}</div>
+<div> {{ data.bigNumb | number:'4.4-5'}}</div>
+
+
+<br>
+<div> Currency </div>
+<div> Default {{ data.numb | currency }} </div>
+
+<div>Code {{ data.money | currency:'EUR':'code'}}</div> 
+
+<div>Symbol {{ data.money | currency:'EUR':'symbol'}}</div>
+<div>Symbol {{ data.money | currency:'EUR':'symbol':'1.1-1'}}</div>
+
+<div>My own text - {{ data.money | currency:'EUR':'special price: '}}</div>
+
+
+<br> <br>
 <div> Couple pipes </div>
 <div> {{ data.str | slice:5 | uppercase }} </div>
 
