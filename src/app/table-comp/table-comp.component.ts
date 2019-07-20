@@ -9,7 +9,7 @@ export class TableCompComponent implements OnInit {
 
   public data = {
     // currency: string;
-    persentage: 0.15,
+    numb: 0.15,
     str: 'Hello User', 
     date: new Date(2015, 3, 25),
   } as Info;
@@ -32,7 +32,7 @@ export class TableCompComponent implements OnInit {
 
 export class Info {
   // public currency: number;
-  public persentage: number;
+  public numb: number;
   public str: string; //lower upper
   public date: Date;
 }
