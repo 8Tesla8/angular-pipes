@@ -1,3 +1,17 @@
 <p>
   table-comp works!
 </p>
+
+
+<div> Work with date </div>
+<div> {{ data.date }} </div>
+
+<br>
+<div> Work with string </div>
+<div> {{ data.str | uppercase }} </div>
+<div> {{ data.str | lowercase }} </div>
+
+<!-- first parameter start from -->
+<div> {{ data.str | slice:3 }} </div> 
+<!-- second parameter end -->
+<div> {{ data.str | slice:3:8 }} </div> 
