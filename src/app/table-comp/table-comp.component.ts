@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-table-comp',
   templateUrl: './table-comp.component.html',
   styleUrls: ['./table-comp.component.css']
 })
-export class TableCompComponent implements OnInit {
+export class TableCompComponent {
 
   public data = {
     money: 123.43,
@@ -14,13 +14,6 @@ export class TableCompComponent implements OnInit {
     str: 'Hello User', 
     date: new Date(2015, 3, 25),
   } as Info;
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
 }
 
 export class Info {
