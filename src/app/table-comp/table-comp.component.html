@@ -21,17 +21,17 @@
 
 <br> <br>
 <div> Number </div>
-<div> percent {{ data.numb | percent }} </div>
+<div> percent {{ data.percent | percent }} </div>
 
 <br>
 <div> DecimalPipe</div>
-<div> {{ data.bigNumb | number:'3.1-2'}}</div>
-<div> {{ data.bigNumb | number:'4.4-5'}}</div>
+<div> {{ data.numb | number:'3.1-2'}}</div>
+<div> {{ data.numb | number:'4.4-5'}}</div>
 
 
 <br>
 <div> Currency </div>
-<div> Default {{ data.numb | currency }} </div>
+<div> Default {{ data.money | currency }} </div>
 
 <div>Code {{ data.money | currency:'EUR':'code'}}</div> 
 
